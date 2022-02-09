@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Novo Estado</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="_ID"
+                [(ngModel)]="estado._id" name="_id">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="ID"
+                [(ngModel)]="estado.idEstado" name="idEstado">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="descricao"
+                [(ngModel)]="estado.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="sigla"
+                [(ngModel)]="estado.sigla" name="sigla">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createEstado()" color="primary">
+        Salvar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

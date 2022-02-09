@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>Excluir Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="_ID"
+                [(ngModel)]="cliente._id" name="_id">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="ID"
+                [(ngModel)]="cliente.idCliente" name="idCliente">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [value]="cliente.nome" name="nome" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CNPJ"
+                [value]="cliente.cnpj" name="cnpj" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteCliente()" color="warn">
+        Excluir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
