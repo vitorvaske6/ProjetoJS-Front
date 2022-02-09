@@ -1,7 +1,7 @@
 # Commands for running
 
-npm install
-ng add @angular/material
+`npm install`
+`ng add @angular/material`
 
 # Frontend
 
